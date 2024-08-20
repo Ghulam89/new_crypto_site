@@ -332,7 +332,7 @@ const Staking = () => {
                       {selectedOption4 || "Select an option"}
                     </p>
                     <p className="tw-m-0">
-                    <TiArrowSortedDown color="white" size={20} />
+                    <TiArrowSortedDown color="black" size={20} />
 
                     </p>
                   </button>
