@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         'zen-dots': ['"Zen Dots"', 'cursive'],
         'poppins': ['"Poppins"', 'sans-serif'],
+        'syne': ['"Syne"', 'sans-serif'],
       },
       colors:{
         primary:'#FFE247',

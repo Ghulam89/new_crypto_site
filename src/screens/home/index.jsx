@@ -12,7 +12,7 @@ const Home = () => {
     <div className=' tw-overflow-x-hidden'>
       <Hero />
       
-    <div className=' tw-relative'>
+    <div className='   tw-px-5 tw-relative'>
     <div  className=' tw-text-center'>
       <h2 className="  tw-pt-16  sm:tw-pt-0 tw-text-textColor">
             Your Referral <span className=" tw-text-primary"> Reward</span>
@@ -31,7 +31,12 @@ const Home = () => {
       <div className=" tw-absolute tw-left-20 tw-bottom-[100%] ">
         <img
           src={require("../../assets/images/heroLeft.png")}
-          className=" sm:tw-w-32 tw-w-28"
+          className=" md:tw-block tw-hidden tw-w-36"
+          alt=""
+        />
+        <img
+          src={require("../../assets/images/mobile_image.png")}
+          className="tw-block md:tw-hidden"
           alt=""
         />
       </div>

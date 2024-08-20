@@ -17,10 +17,14 @@ const About = () => {
       <div className='container'>
         <div className='row   g-5 tw-items-center'>
             <div className='col-lg-7 col-md-12'>
-              <span className='  tw-text-textColor tw-font-semibold tw-text-[18px] sm:tw-justify-start tw-justify-center tw-flex tw-items-center tw-gap-4'>  <p className='  sm:tw-block tw-hidden m-0 tw-w-16 tw-h-0.5  tw-bg-green'></p> STAKING</span>
+              <span className='  tw-text-textColor tw-font-semibold tw-text-[18px] sm:tw-justify-start tw-justify-center tw-flex tw-items-center tw-gap-4'>  <p className='  sm:tw-block tw-hidden tw-font-syne m-0 tw-w-16 tw-h-0.5  tw-bg-green'></p> STAKING</span>
+              <h1 className="  tw-text-textColor  tw-font-bold tw-font-syne tw-pt-4">
+              How to Stake ?
+          
+            </h1>
            <ul className=' tw-p-0  tw-leading-5'>
             <li>
-            <h2 className="  tw-text-textColor tw-pt-4 tw-font-poppins">
+            <h2 className="  tw-text-textColor  tw-font-bold tw-font-syne tw-pt-4">
             
             Add GEE Tokens
           
@@ -29,7 +33,7 @@ const About = () => {
             You will need tokens in your wallet to stake. Once you purchase GEE tokens, make sure that you add the GEE token to your MetaMask/TrustWallet Wallet so you can view your GEE balance.   </p>
             </li>
             <li>
-            <h2 className="  tw-text-textColor tw-pt-4 tw-font-poppins">
+            <h2 className="  tw-text-textColor tw-font-bold tw-font-syne tw-pt-4">
             
             Connect & Verify Wallet
           
@@ -38,7 +42,7 @@ const About = () => {
             Click the "Connect Wallet" button at the upper right corner of the site and make sure you have the Arbitrum network selected in your MetaMask wallet.   </p>
             </li>
             <li>
-            <h2 className="  tw-text-textColor tw-pt-4 tw-font-poppins">
+            <h2 className="  tw-text-textColor tw-font-bold tw-pt-4 tw-font-syne">
             
             Stake Wallet
           

@@ -16,12 +16,12 @@ const Brands = () => {
     cssEase: "ease", // Change to ease for a smoother effect
     arrows: true,
     prevArrow: (
-      <div className="prev-arrow tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-left-[-20px]">
+      <div className="prev-arrow tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-left-[-20px] md:tw-left-[-10px] tw-z-10">
         <FaArrowLeft className="tw-text-textColor" />
       </div>
     ),
     nextArrow: (
-      <div className="next-arrow tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-right-[-20px]">
+      <div className="next-arrow tw-w-12 tw-h-12 tw-flex tw-justify-center tw-items-center tw-right-[-20px] md:tw-right-[-10px] tw-z-10">
         <FaArrowRightLong className="tw-text-textColor" />
       </div>
     ),
@@ -47,7 +47,7 @@ const Brands = () => {
       {
         breakpoint: 576,
         settings: {
-          slidesToShow: 2, // Show 2 slides on screens larger than 576px
+          slidesToShow: 2, 
         },
       },
     ],
@@ -67,35 +67,29 @@ const Brands = () => {
       <div className="container tw-mx-auto">
         <Slider {...settings}>
           {brands.map((brand, index) => (
-            <div className="tw-p-3">
-
-          
-            <div
-              key={index}
-              className="tw-border-2 p-4  tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor "
-            >
-              <div className="  tw-flex tw-justify-end">
-
-                <div className=" tw-w-10 tw-rounded-md tw-flex tw-justify-center  tw-items-center tw-h-10 tw-bg-green">
-                  <span className=" tw-text-white tw-font-poppins tw-text-sm"> 2%</span>
+            <div className="tw-p-3" key={index}>
+              <div
+                className="tw-border-2 sm:p-4 p-3 tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor"
+              >
+                <div className="tw-flex tw-justify-end">
+                  <div className="tw-w-10 tw-rounded-md tw-flex tw-justify-center tw-items-center tw-h-10 tw-bg-green">
+                    <span className="tw-text-white tw-font-poppins tw-text-sm">2%</span>
+                  </div>
                 </div>
-
-              </div>
-              <h4 className="tw-text-xl tw-mt-2 tw-font-semibold tw-text-center">
-                {brand.name}
-              </h4>
-              <div className="tw-w-full tw-flex-col tw-flex tw-justify-between tw-items-center">
-                <div className="tw-flex tw-justify-between tw-items-center tw-w-full tw-my-2">
-                  <span className="tw-text-textColor">Total Earning</span>
-                  <span className="tw-text-textColor">200.00</span>
-                </div>
-                <div className="tw-flex tw-justify-between tw-items-center tw-w-full">
-                  <span className="tw-text-textColor">Team</span>
-                  <span className="tw-text-textColor">02</span>
+                <h4 className="tw-text-xl tw-mt-2 tw-font-semibold tw-text-center">
+                  {brand.name}
+                </h4>
+                <div className="tw-w-full tw-flex-col tw-flex tw-justify-between tw-items-center">
+                  <div className="tw-flex tw-justify-between tw-items-center tw-w-full tw-my-2">
+                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">Total Earning</span>
+                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">200.00</span>
+                  </div>
+                  <div className="tw-flex tw-justify-between tw-items-center tw-w-full">
+                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">Team</span>
+                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">02</span>
+                  </div>
                 </div>
               </div>
-            </div>
-
             </div>
           ))}
         </Slider>
