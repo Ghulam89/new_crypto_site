@@ -37,10 +37,20 @@
 @media screen and (max-width:567px) {
 
   .slick-next {
-    right: -32px !important;
+    right: -24px !important;
 }
 
 .slick-prev {
-  left: -32px !important;
+  left: -24px !important;
 }
+
+.slick-arrow{
+  width: 25px  !important;
+  height: 25px !important;
+  background-color:#FFE247 !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
 }

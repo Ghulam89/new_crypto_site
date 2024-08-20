@@ -245,10 +245,36 @@ const Staking = () => {
           <div className="tw-flex-col tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
              <div>
               <label className=" tw-text-textColor ">Previous Investment</label>
-           <div className="tw-text-textColor tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-py-3 tw-my-2 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3">
-           <input placeholder="100" className=" tw-w-full tw-text-textColor  tw-font-poppins  placeholder:tw-text-textColor  tw-bg-transparent  tw-outline-none" />
+              <div
+                  className="tw-relative tw-mt-2 tw-w-full tw-inline-block"
+                  ref={dropdownRef3}
+                >
+                  <button
+                    onClick={handleToggle3}
+                    className="tw-border-textColor tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-4 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                  >
+                    <p className="tw-m-0 tw-border-textColor">
+                      {selectedOption3 || "Select an option"}
+                    </p>
+                    <p className="tw-m-0">
+                    <TiArrowSortedDown color="black" size={20} />
 
-           </div>
+                    </p>
+                  </button>
+                  {isOpen3 && (
+                    <ul className="tw-absolute tw-bg-white tw-p-0 tw-z-30 tw-bg- tw-text-[black] black tw-shadow-md tw-rounded-md tw-mt-2 tw-w-full">
+                      {options3.map((option) => (
+                        <li
+                          key={option}
+                          onClick={() => handleOption4Click(option)}
+                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-button-gradient"
+                        >
+                          {option}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
 
            <div className=" tw-pt-2.5 tw-flex  tw-gap-2  tw-justify-end">
             <div className=" tw-flex tw-gap-1">
@@ -320,36 +346,36 @@ const Staking = () => {
              <div>
               <label className=" tw-text-textColor">Investment History</label>
            <div className=" tw-mt-2.5">
-           <div
-                  className="tw-relative tw-w-full tw-inline-block"
-                  ref={dropdownRef4}
-                >
-                  <button
-                    onClick={handleToggle4}
-                    className="tw-border-textColor tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+            <div
+                    className="tw-relative tw-w-full tw-inline-block"
+                    ref={dropdownRef4}
                   >
-                    <p className="tw-m-0 tw-border-textColor">
-                      {selectedOption4 || "Select an option"}
-                    </p>
-                    <p className="tw-m-0">
-                    <TiArrowSortedDown color="black" size={20} />
+                    <button
+                      onClick={handleToggle4}
+                      className="tw-border-textColor tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-4 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                    >
+                      <p className="tw-m-0 tw-border-textColor">
+                        {selectedOption4 || "Select an option"}
+                      </p>
+                      <p className="tw-m-0">
+                      <TiArrowSortedDown color="black" size={20} />
 
-                    </p>
-                  </button>
-                  {isOpen4 && (
-                    <ul className="tw-absolute tw-bg-white tw-p-0 tw-z-30 tw-bg- tw-text-[black] black tw-shadow-md tw-rounded-md tw-mt-2 tw-w-full">
-                      {options4.map((option) => (
-                        <li
-                          key={option}
-                          onClick={() => handleOption4Click(option)}
-                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-button-gradient"
-                        >
-                          {option}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+                      </p>
+                    </button>
+                    {isOpen4 && (
+                      <ul className="tw-absolute tw-bg-white tw-p-0 tw-z-30 tw-bg- tw-text-[black] black tw-shadow-md tw-rounded-md tw-mt-2 tw-w-full">
+                        {options4.map((option) => (
+                          <li
+                            key={option}
+                            onClick={() => handleOption4Click(option)}
+                            className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-button-gradient"
+                          >
+                            {option}
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
            </div>
            <div className="tw-flex  tw-pt-7   tw-gap-2  tw-justify-end tw-items-center">
             <p className="tw-m-0 tw-font-poppins tw-text-sm tw-border-textColor"> Earn Reward:</p>

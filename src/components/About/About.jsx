@@ -17,7 +17,7 @@ const About = () => {
       <div className='container'>
         <div className='row   g-5 tw-items-center'>
             <div className='col-lg-7 col-md-12'>
-              <span className='  tw-text-textColor tw-font-semibold tw-text-[18px] sm:tw-justify-start tw-justify-center tw-flex tw-items-center tw-gap-4'>  <p className='  sm:tw-block tw-hidden tw-font-syne m-0 tw-w-16 tw-h-0.5  tw-bg-green'></p> STAKING</span>
+              <span className='  tw-text-textColor tw-font-semibold tw-text-[18px] sm:tw-justify-start tw-justify-center tw-flex tw-items-center tw-gap-4'>  <p className='  tw-font-syne m-0 tw-w-16 tw-h-0.5  tw-bg-green'></p> STAKING</span>
               <h1 className="  tw-text-textColor  tw-font-bold tw-font-syne tw-pt-4">
               How to Stake ?
           

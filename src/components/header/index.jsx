@@ -63,7 +63,7 @@ const Header = () => {
           <li>
             <Link
               className={`${
-                isActive("/") ? "  tw-text-textColor" : "tw-text-textColor"
+                isActive("/") ? "  tw-text-primary" : "tw-text-textColor"
               }tw-text-white`}
               to={"/"}
             >
@@ -73,7 +73,7 @@ const Header = () => {
           <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "aboutSection")}
+              onClick={() => handleNavigate("/", "")}
               className="tw-text-textColor"
             >
               About us
@@ -108,7 +108,7 @@ const Header = () => {
           <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "teamSection")}
+              onClick={() => handleNavigate("/", "aboutSection")}
               className="tw-text-textColor"
             >
               How To Stake
@@ -161,7 +161,9 @@ const Header = () => {
           <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "aboutSection")}
+              onClick={() => {handleNavigate("/", "aboutSection")
+                setOpen(false)
+              }}
               className="tw-text-textColor"
             >
               About us
@@ -176,7 +178,9 @@ const Header = () => {
           <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "roadSection")}
+              onClick={() =>{ handleNavigate("/", "")
+                setOpen(false)
+              }}
               className="tw-text-textColor"
             >
               Road Map
@@ -185,7 +189,10 @@ const Header = () => {
             <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "tokenSection")}
+              onClick={() => {handleNavigate("/", "")
+                setOpen(false)
+
+              }}
               className="tw-text-textColor"
             >
               Tokenomics
@@ -196,7 +203,10 @@ const Header = () => {
           <li>
             <Link
               to={"/"}
-              onClick={() => handleNavigate("/", "teamSection")}
+              onClick={() => {handleNavigate("/", "aboutSection")
+                setOpen(false)
+
+              }}
               className="tw-text-textColor"
             >
               How To Stake

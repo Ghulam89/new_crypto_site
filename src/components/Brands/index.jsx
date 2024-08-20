@@ -54,11 +54,18 @@ const Brands = () => {
   };
 
   const brands = [
-    { src: "brand1.png", name: "Level 1" },
-    { src: "brand2.png", name: "Level 2" },
-    { src: "brand3.png", name: "Level 3" },
-    { src: "brand4.png", name: "Level 4" },
-    { src: "brand5.png", name: "Level 5" },
+    { src: "brand1.png", name: "Level 1",level:'1'},
+    { src: "brand2.png", name: "Level 2",level:'2'},
+    { src: "brand3.png", name: "Level 3",level:'3'},
+    { src: "brand4.png", name: "Level 4",level:'4'},
+    { src: "brand5.png", name: "Level 5",level:'5' },
+    { src: "brand5.png", name: "Level 6",level:'6' },
+    { src: "brand5.png", name: "Level 7",level:'7' },
+    { src: "brand5.png", name: "Level 8",level:'8' },
+    { src: "brand5.png", name: "Level 9",level:'9' },
+    { src: "brand5.png", name: "Level 10",level:'10' },
+    { src: "brand5.png", name: "Level 11",level:'11' },
+    { src: "brand5.png", name: "Level 12",level:'12' },
     // Add more brands as needed
   ];
 
