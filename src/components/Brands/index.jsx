@@ -67,26 +67,26 @@ const Brands = () => {
       <div className="container tw-mx-auto">
         <Slider {...settings}>
           {brands.map((brand, index) => (
-            <div className="tw-p-3" key={index}>
+            <div className="sm:tw-p-3 tw-p-2" key={index}>
               <div
-                className="tw-border-2 sm:p-4 p-3 tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor"
+                className="tw-border-2 sm:tw-p-4 tw-p-2 tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor"
               >
                 <div className="tw-flex tw-justify-end">
-                  <div className="tw-w-10 tw-rounded-md tw-flex tw-justify-center tw-items-center tw-h-10 tw-bg-green">
-                    <span className="tw-text-white tw-font-poppins tw-text-sm">2%</span>
+                  <div className="sm:tw-w-10 tw-w-8 tw-rounded-md tw-flex tw-justify-center tw-items-center sm:tw-h-10 tw-h-8 tw-bg-green">
+                    <span className="tw-text-white tw-font-poppins sm:tw-text-sm tw-text-[9px]">2%</span>
                   </div>
                 </div>
-                <h4 className="tw-text-xl tw-mt-2 tw-font-semibold tw-text-center">
+                <h4 className="sm:tw-text-xl tw-text-[16px] tw-mt-2 tw-font-semibold tw-text-center">
                   {brand.name}
                 </h4>
                 <div className="tw-w-full tw-flex-col tw-flex tw-justify-between tw-items-center">
                   <div className="tw-flex tw-justify-between tw-items-center tw-w-full tw-my-2">
-                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">Total Earning</span>
-                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">200.00</span>
+                    <span className="tw-text-textColor tw-text-[9px] sm:tw-text-base">Total Earning</span>
+                    <span className="tw-text-textColor tw-text-[9px] sm:tw-text-base">200.00</span>
                   </div>
                   <div className="tw-flex tw-justify-between tw-items-center tw-w-full">
-                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">Team</span>
-                    <span className="tw-text-textColor tw-text-sm sm:tw-text-base">02</span>
+                    <span className="tw-text-textColor tw-text-[9px] sm:tw-text-base">Team</span>
+                    <span className="tw-text-textColor tw-text-[9px] sm:tw-text-base">02</span>
                   </div>
                 </div>
               </div>

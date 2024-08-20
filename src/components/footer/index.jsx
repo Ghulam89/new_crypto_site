@@ -20,6 +20,7 @@ const Footer = () => {
                 </button>
               </div>
               <p className=" sm:tw-text-xl tw-text-sm tw-text-black tw-pt-6 tw-text-center">
+                
                 Don’t hesitate to subscribe to latest news about GEERaaf Staking
                 as well as crucial financial knowledge to become successful
                 investors globally
