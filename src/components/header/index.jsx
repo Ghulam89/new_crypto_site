@@ -47,14 +47,14 @@ const Header = () => {
   }, []);
 
   return (
-    <nav  className={`tw-top-0 tw-w-full  ${
+    <nav  className={`tw-top-0 tw-w-full tw-z-20 tw-bg-white  ${
       scrollBackground ? "tw-bg-[#1111]  tw-fixed" : "tw-bg-[#1111]"
     } sm:tw-relative md:tw-sticky`}>
       <div className="tw-flex tw-items-center tw-font-medium tw-h-32 container tw-mx-auto tw-justify-between">
         <div className="">
           <img
             src={require("../../assets/images/logo.png")}
-            className="tw-object-contain tw-w-[180px]"
+            className="tw-object-contain tw-w-[80px]"
             alt="Logo"
           />
         </div>
@@ -63,7 +63,7 @@ const Header = () => {
           <li>
             <Link
               className={`${
-                isActive("/") ? " tw-text-white" : "tw-text-white"
+                isActive("/") ? "  tw-text-textColor" : "tw-text-textColor"
               }tw-text-white`}
               to={"/"}
             >
@@ -74,14 +74,14 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "aboutSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               About us
             </Link>
           </li>
         
            <li>
-            <Link to={"/"} className="tw-text-white">
+            <Link to={"/"} className="tw-text-textColor">
               Staking
             </Link>
           </li>
@@ -89,7 +89,7 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "roadSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               Road Map
             </Link>
@@ -98,7 +98,7 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "tokenSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               Tokenomics
             </Link>
@@ -109,7 +109,7 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "teamSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               How To Stake
             </Link>
@@ -118,7 +118,7 @@ const Header = () => {
 
         <div className="md:tw-block tw-hidden">
           <Button
-            Icons={<FaRegUser color="black" />}
+            Icons={<img src={require('../../assets/images/wallet.png')} />}
             label={"Connect Wallet"}
           />
         </div>
@@ -127,14 +127,14 @@ const Header = () => {
           className="tw-text-3xl lg:tw-hidden tw-pt-2 tw-z-50"
           onClick={() => setOpen(!open)}
         >
-          {open ? <MdOutlineClose color="white" /> : <MdMenu color="white" />}
+          {open ? <MdOutlineClose color="black" /> : <MdMenu color="black" />}
         </div>
 
         {/* Mobile nav */}
         <div
           className={`
-            lg:tw-hidden tw-z-40    tw-bg-[#1111]  tw-shadow-xl  tw-fixed tw-w-full tw-top-0 tw-overflow-y-auto tw-bottom-0 tw-leading-10 tw-py-10 
-            tw-duration-500 ${open ? "tw-left-0 tw-bg-black " : "  tw-bg-black tw-left-[-100%]"}
+            lg:tw-hidden tw-z-40    tw-bg-white  tw-shadow-xl  tw-fixed tw-w-full tw-top-0 tw-overflow-y-auto tw-bottom-0 tw-leading-10 tw-py-10 
+            tw-duration-500 ${open ? "tw-left-0 tw-bg-white " : "  tw-bg-white tw-left-[-100%]"}
           `}
         >
          
@@ -142,7 +142,7 @@ const Header = () => {
           <div className="tw-pb-5 tw-px-8">
             <img
               src={require("../../assets/images/logo.png")}
-              className="tw-object-contain tw-w-[180px]"
+              className="tw-object-contain tw-w-[60px]"
               alt="Logo"
             />
           </div>
@@ -151,8 +151,8 @@ const Header = () => {
           <li>
             <Link
               className={`${
-                isActive("/") ? " tw-text-white" : "tw-text-white"
-              }tw-text-white`}
+                isActive("/") ? "  tw-text-textColor" : "tw-text-textColor"
+              }tw-text-textColor`}
               to={"/"}
             >
               Home
@@ -162,14 +162,14 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "aboutSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               About us
             </Link>
           </li>
         
            <li>
-            <Link to={"/"} className="tw-text-white">
+            <Link to={"/"} className="tw-text-textColor">
               Staking
             </Link>
           </li>
@@ -177,7 +177,7 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "roadSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               Road Map
             </Link>
@@ -186,7 +186,7 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "tokenSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               Tokenomics
             </Link>
@@ -197,10 +197,18 @@ const Header = () => {
             <Link
               to={"/"}
               onClick={() => handleNavigate("/", "teamSection")}
-              className="tw-text-white"
+              className="tw-text-textColor"
             >
               How To Stake
             </Link>
+          </li>
+          <li>
+          <div className=" tw-pt-4">
+          <Button
+            Icons={<img src={require('../../assets/images/wallet.png')} />}
+            label={"Connect Wallet"}
+          />
+        </div>
           </li>
           </ul>
           

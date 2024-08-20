@@ -141,25 +141,25 @@ const Staking = () => {
       title: "Stake",
       content: (
         <>
-          <div className="tw-border tw-border-[#FFE247] tw-rounded-md">
-            <div className="tw-flex px-4 tw-py-3 tw-border-b tw-border-[#FFE247]  tw-justify-between tw-items-center">
+          <div className="tw-border-2 tw-border-textColor tw-rounded-md">
+            <div className="tw-flex px-4 tw-py-3 tw-border-b  tw-border-textColor tw-justify-between tw-items-center">
               <div>
               <img src={require("../../assets/images/c5.png")} />
               </div>
-              <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+              <p className="tw-m-0  tw-text-textColor tw-text-2xl tw-font-bold">
                 GEE
               </p>
             </div>
 
-           <div className=" p-4 tw-border-b tw-border-[#FFE247] tw-flex tw-flex-col tw-gap-3">
+           <div className=" p-4 tw-border-b   tw-border-textColor tw-flex tw-flex-col tw-gap-3">
            <div className="tw-flex  tw-justify-between tw-items-center">
-              <p className="tw-m-0 tw-text-white tw-font-poppins ">Community Distribution(30%)</p>
-              <p className="tw-m-0  tw-font-poppins tw-text-white tw-text-lg">30 <span className=" tw-text-[#FFE247]">GEE</span> </p>
+              <p className="tw-m-0  tw-text-textColor tw-font-poppins ">Community Distribution(30%)</p>
+              <p className="tw-m-0  tw-font-poppins  tw-text-textColor tw-text-lg">30 <span className="  tw-text-green">GEE</span> </p>
             </div>
 
             <div className="tw-flex  tw-justify-between tw-items-center">
-              <p className="tw-m-0 tw-text-white tw-font-poppins ">Net Stake Amount</p>
-              <p className="tw-m-0  tw-font-poppins tw-text-white tw-text-lg">70 <span className=" tw-text-[#FFE247]">GEE</span> </p>
+              <p className="tw-m-0  tw-text-textColor tw-font-poppins ">Net Stake Amount</p>
+              <p className="tw-m-0  tw-font-poppins tw-text-textColor tw-text-lg">70 <span className=" tw-text-green">GEE</span> </p>
             </div>
            </div>
 
@@ -168,10 +168,10 @@ const Staking = () => {
             
                 <div>
                   <div className="tw-flex tw-justify-between tw-items-center">
-                    <p className=" tw-font-poppins tw-text-white">
+                    <p className=" tw-font-poppins  tw-text-textColor">
                       Write Amount
                     </p>
-                    <p className="tw-text-white tw-font-poppins tw-text-sm">Balance: 100 <span className=" tw-text-[#FFE247]">GEE</span></p>
+                    <p className=" tw-text-textColor tw-font-poppins tw-text-sm">Balance: 100 <span className=" tw-text-green">GEE</span></p>
                   </div>
                   <div
                     className="tw-relative tw-w-full tw-inline-block"
@@ -179,14 +179,14 @@ const Staking = () => {
                   >
                     <button
                       // onClick={handleToggle2}
-                      className="tw-border-[#FFE247] tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-text-black tw-py-3 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                      className=" tw-border-textColor tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-text-black tw-py-3 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                     >
                       {/* <p className="tw-m-0">
                         {selectedOption2 || "Select an option"}
                       </p> */}
-                      <input placeholder="100" className=" tw-w-full tw-text-white tw-font-poppins  placeholder:tw-text-white tw-bg-transparent  tw-outline-none" />
+                      <input placeholder="100" className=" tw-w-full  tw-text-textColor tw-font-poppins  placeholder:tw-text-textColor tw-bg-transparent  tw-outline-none" />
                       <div className="tw-flex tw-items-center tw-gap-2">
-                        <p className="tw-text-sm tw-m-0 tw-text-white">GEE</p>
+                        <p className="tw-text-sm tw-m-0  tw-text-textColor">GEE</p>
                         <button className=" text-black tw-bg-button-gradient tw-py-1.5 tw-px-1 tw-text-sm tw-rounded-md">
                           Max
                         </button>
@@ -209,10 +209,10 @@ const Staking = () => {
 
 
                   <div className="tw-flex tw-pt-14 tw-justify-between tw-items-center">
-                    <p className=" tw-font-poppins tw-text-white">
+                    <p className=" tw-font-poppins  tw-text-textColor">
                       Expected Reward
                     </p>
-                    <p className="tw-text-white tw-font-poppins tw-text-sm">120 <span className=" tw-text-[#FFE247]">GEE</span></p>
+                    <p className=" tw-text-textColor tw-font-poppins tw-text-sm">120 <span className=" tw-text-[#FFE247]">GEE</span></p>
                   </div>
                 </div>
               </div>
@@ -229,24 +229,24 @@ const Staking = () => {
       title: "Unstake",
       content:(
         <>
-        <div className="tw-border tw-border-[#FFE247] tw-rounded-md">
-          <div className="tw-flex px-4 tw-py-3 tw-border-b tw-justify-between tw-items-center">
+        <div className="tw-border-2 tw-border-textColor tw-rounded-md">
+          <div className="tw-flex px-4 tw-py-3 tw-border-b-2  tw-border-textColor tw-justify-between tw-items-center">
             <img src={require("../../assets/images/c5.png")} />
-            <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+            <p className="tw-m-0  tw-text-textColor tw-text-2xl tw-font-bold">
               GEE
             </p>
           </div>
 
           <div className="tw-flex p-4  tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-text-white  tw-font-zen-dots">Total Stake</p>
-            <p className="tw-m-0  tw-font-zen-dots tw-text-white"> 10,000 <span className=" tw-text-[#FFE247]">GEE</span> </p>
+            <p className="tw-m-0  tw-text-textColor  tw-font-zen-dots">Total Stake</p>
+            <p className="tw-m-0  tw-font-zen-dots tw-text-textColor "> 10,000 <span className=" tw-text-[#FFE247]">GEE</span> </p>
           </div>
 
           <div className="tw-flex-col tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
              <div>
-              <label className=" tw-text-white">Previous Investment</label>
-           <div className="tw-border-white tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-text-black tw-py-3 tw-my-2 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3">
-           <input placeholder="100" className=" tw-w-full tw-text-white tw-font-poppins  placeholder:tw-text-white tw-bg-transparent  tw-outline-none" />
+              <label className=" tw-text-textColor ">Previous Investment</label>
+           <div className="tw-text-textColor tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-py-3 tw-my-2 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3">
+           <input placeholder="100" className=" tw-w-full tw-text-textColor  tw-font-poppins  placeholder:tw-text-textColor  tw-bg-transparent  tw-outline-none" />
 
            </div>
 
@@ -256,7 +256,7 @@ const Staking = () => {
                 <p className=" tw-m-0 tw-text-sm tw-text-black tw-font-poppins tw-font-semibold">{String(timeLeft.days).padStart(2, '0')}</p>
               </div>
 
-              <p className=" tw-m-0 tw-text-sm tw-text-white  tw-font-poppins">Days</p>
+              <p className=" tw-m-0 tw-text-sm tw-text-textColor   tw-font-poppins">Days</p>
 
             </div>
             <div className=" tw-flex tw-gap-1">
@@ -264,7 +264,7 @@ const Staking = () => {
                 <p className=" tw-m-0 tw-text-black tw-font-poppins">{String(timeLeft.hours).padStart(2, '0')}</p>
               </div>
 
-              <p className=" tw-m-0 tw-text-sm tw-text-white">Hours</p>
+              <p className=" tw-m-0 tw-text-sm tw-text-textColor ">Hours</p>
 
             </div>
             <div className=" tw-flex tw-gap-1">
@@ -272,7 +272,7 @@ const Staking = () => {
                 <p className=" text-black tw-font-poppins tw-m-0 ">{String(timeLeft.minutes).padStart(2, '0')}</p>
               </div>
 
-              <p className=" tw-m-0 tw-text-sm tw-text-white tw-font-poppins">Minutes</p>
+              <p className=" tw-m-0 tw-text-sm tw-text-textColor  tw-font-poppins">Minutes</p>
 
             </div>
             <div className=" tw-flex tw-gap-1">
@@ -280,7 +280,7 @@ const Staking = () => {
                 <p className=" tw-m-0 tw-text-black tw-font-poppins">   {String(timeLeft.seconds).padStart(2, '0')}</p>
               </div>
 
-              <p className=" tw-m-0 tw-text-sm tw-text-white tw-font-poppins">Second</p>
+              <p className=" tw-m-0 tw-text-sm tw-text-textColor  tw-font-poppins">Second</p>
 
             </div>
            </div>
@@ -297,28 +297,28 @@ const Staking = () => {
       title: "Reward",
       content:(
         <>
-        <div className="tw-border tw-border-[#FFE247] tw-rounded-md">
-          <div className="tw-flex tw-mb-4 px-4 tw-py-3 tw-border-b  tw-border-[#FFE247] tw-justify-between tw-items-center">
+        <div className="tw-border-2 tw-border-textColor tw-rounded-md">
+          <div className="tw-flex tw-mb-4 px-4 tw-py-3 tw-border-b-2  tw-border-textColor tw-justify-between tw-items-center">
             <img src={require("../../assets/images/c5.png")} />
-            <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+            <p className="tw-m-0  tw-text-textColor tw-text-2xl tw-font-bold">
             GEE
             </p>
           </div>
 
           <div className="tw-flex px-4   tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">Total Earning</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">128.455 <span className=" tw-text-lg tw-text-[#FFE247]">GEE</span></p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-textColor">Total Earning</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-textColor">128.455 <span className=" tw-text-lg tw-text-[#FFE247]">GEE</span></p>
           </div>
 
 
           <div className="tw-flex px-4  tw-pt-1 tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">Available To Clamin</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">128.455 <span className=" tw-text-lg tw-text-[#FFE247]">GEE</span></p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-textColor">Available To Clamin</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-textColor">128.455 <span className=" tw-text-lg tw-text-[#FFE247]">GEE</span></p>
           </div>
 
           <div className="tw-flex-col   tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
              <div>
-              <label className=" tw-text-white">Investment History</label>
+              <label className=" tw-text-textColor">Investment History</label>
            <div className=" tw-mt-2.5">
            <div
                   className="tw-relative tw-w-full tw-inline-block"
@@ -326,9 +326,9 @@ const Staking = () => {
                 >
                   <button
                     onClick={handleToggle4}
-                    className="tw-border-[#fff] tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                    className="tw-border-textColor tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                   >
-                    <p className="tw-m-0 tw-text-white">
+                    <p className="tw-m-0 tw-border-textColor">
                       {selectedOption4 || "Select an option"}
                     </p>
                     <p className="tw-m-0">
@@ -352,8 +352,8 @@ const Staking = () => {
                 </div>
            </div>
            <div className="tw-flex  tw-pt-7   tw-gap-2  tw-justify-end tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white"> Earn Reward:</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white"> 128.4554 <span className=" tw-text-[#FFE247]">GEE</span></p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-border-textColor"> Earn Reward:</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-border-textColor"> 128.4554 <span className=" tw-text-[#FFE247]">GEE</span></p>
           </div>
          
              </div>
@@ -370,7 +370,7 @@ const Staking = () => {
   return (
     <div className="tw-bg-center  tw-relative  tw-bg-cover tw-w-full tw-h-auto">
       
-      <div className="container tw-py-24">
+      <div className="container md:tw-py-24 tw-py-3">
         <div className="row tw-items-center">
           <div className="col-lg-12 col-md-12 tw-mx-auto">
             <div className="mx-auto mt-8  mb-24">

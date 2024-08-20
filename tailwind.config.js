@@ -8,6 +8,14 @@ module.exports = {
         'zen-dots': ['"Zen Dots"', 'cursive'],
         'poppins': ['"Poppins"', 'sans-serif'],
       },
+      colors:{
+        primary:'#FFE247',
+        // secondary:'#0C0DB5',
+        // lightBlue:'#3C5CC9',
+        green:'#489f68',
+        textColor:'#101010',
+        // green:'#0BA645',
+      },
       backgroundImage:{
         Hero:"url('assets/images/global-business.png')",
         Team_bg:"url('assets/images/team_bg.png')",

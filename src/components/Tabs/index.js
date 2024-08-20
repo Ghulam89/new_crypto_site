@@ -12,7 +12,7 @@ const Tabs = ({ tabs, defaultTab, className }) => {
             className={`tw-px-4   tw-py-4 ${className} ${
               activeTab === tab.title
                 ? "tw-w-full tw-text-black tw-font-zen-dots tw-text-lg  tw-bg-button-gradient tw-bg-BG"
-                : " tw-border-2  tw-border-[#FFE247] tw-text-white tw-font-zen-dots border tw-w-full"
+                : " tw-border-2    tw-border-textColor  tw-text-textColor tw-font-zen-dots  tw-w-full"
             }`}
             onClick={() => setActiveTab(tab.title)}
           >
