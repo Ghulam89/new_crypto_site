@@ -7,18 +7,20 @@ const Footer = () => {
     <div>
       <div className="  tw-bg-[#FFE247]">
         <div className="container  tw-py-8">
-          <div className="row tw-items-center">
+          <div className="row">
             <div className="col-md-8 mx-auto">
-              <img
+            <div className=" tw-text-center">
+            <img
                 src={require("../../assets/images/footer_logo.png")}
                 className="tw-mx-auto"
               />
               <h1 className=" tw-text-center tw-font-bold">Token Address</h1>
-              <div className=" tw-flex tw-justify-center">
-                <button className=" tw-pt-1.5  tw-bg-green tw-text-white tw-px-8 tw-py-3 m-0  tw-rounded-tr-md tw-rounded-bl-md  tw-mx-auto">
-                  GEERaff:0x33E4d3163e66B46bAbC0faF8B30C6c36DD4Ab9E9
+              <div className=" ">
+                <button className="  sm:tw-px-5 tw-px-3 tw-py-2 sm:tw-text-base tw-text-sm   tw-bg-green tw-text-white m-0  tw-rounded-tr-md tw-rounded-bl-md">
+                  GEERaff:0x33E4d3163e66B46bAbC0fa F8B30C6c36DD4Ab9E9
                 </button>
               </div>
+            </div>
               <p className=" sm:tw-text-xl tw-text-sm tw-text-black tw-pt-6 tw-text-center">
                 
                 Don’t hesitate to subscribe to latest news about GEERaaf Staking
