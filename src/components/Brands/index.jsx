@@ -76,7 +76,7 @@ const Brands = () => {
           {brands.map((brand, index) => (
             <div className="sm:tw-p-3 tw-p-2" key={index}>
               <div
-                className="tw-border-2 sm:tw-p-4 tw-p-2 tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor"
+                className="tw-border sm:tw-p-4 tw-p-2 tw-rounded-tr-3xl tw-rounded-bl-3xl tw-border-textColor"
               >
                 <div className="tw-flex tw-justify-end">
                   <div className="sm:tw-w-10 tw-w-8 tw-rounded-md tw-flex tw-justify-center tw-items-center sm:tw-h-10 tw-h-8 tw-bg-green">
